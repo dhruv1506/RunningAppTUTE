@@ -67,6 +67,7 @@ class RunFragment:Fragment(R.layout.fragment_run) ,EasyPermissions.PermissionCal
 
     }
 
+    // Easy permission library shows dialog to user about some permission denied permanently which were needed to run aapp
     override fun onPermissionsDenied(requestCode: Int, perms: MutableList<String>) {
        if (EasyPermissions.somePermissionPermanentlyDenied(this,perms))
        {
